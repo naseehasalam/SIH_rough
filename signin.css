@@ -6,6 +6,8 @@ padding-left: 25%;
 /* padding-top: 10%; */
 }
 input[type=text], input[type=password] {
+  display:flex;
+  flex-direction:column;
   width: 20%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -30,6 +32,8 @@ input[type=text], input[type=password] {
     display: block;
 } */
 input[type=text]:focus, input[type=password]:focus {
+  display:flex;
+  flex-direction:column;
   background-color: #ddd;
   outline: none;
 }
