@@ -8,19 +8,21 @@
     <link rel="stylesheet" href="secondary.css">
 </head>
 <body>
-    <img src="edgeimg.jpeg" alt="EDGE">
+    <img id="logo" src="images/adoptbanner.jpg" alt="EDGE">
     <h1>Welcome To The EDGE</h1>
     <form>
-        <div class="container"></div>
+        <div id="container1">
         <label>Username:</label>
         <input type="text" placeholder="Enter Your Username" name="username" required>
         <br><label>Password:</label>
         <input type="password" placeholder="Enter Login Password" id="showpass" name="password" required>
-        <input type="checkbox" onclick="Show()">Show Password<br>
-        <input type="checkbox" checked="checked">Remember Me<br>
+        <label><input type="checkbox" onclick="Show()">Show Password</label>
+        <label><input type="checkbox" checked="checked">Remember Me</label>
         <button type="submit" id="sub">LOGIN</button>
-        <button type="button" class="cancelbtn" id="cancel">CANCEL</button>
+        <button type="button" class="cancelbtn" id="cancel">CANCEL</button><br>
+        </div>
         <script src="secondary.js"></script>
     </form>
 </body>
 </html>
+
