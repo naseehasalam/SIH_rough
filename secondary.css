@@ -1,11 +1,11 @@
 h1{
     /* font-style: italic;*/
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:14;
-    color: brown;
+    color:mediumseagreen
 }
 input{
-    font-family: cursive;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
@@ -20,25 +20,52 @@ input{
     display: block;
 }
 body{
+    max-width:max-content;
     align-items: center;
     position: absolute;
     padding-left: 35%;
     padding-top: 5%;
+    background-image:url(images/bg_secondary.png) ;
+    background-size:cover;
+    background-repeat:no-repeat;
+    margin-left: 80px;
+    margin-top: 90px;
+    color:darkred;
+    font-weight: 600;
+
+}
+
+input[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
 }
 label{
-font-family: cursive;
+    display:flex;
+    align-items: center;
 }
 #cancel{
     cursor: pointer;
-    background-color:rgb(26, 200, 26);
-    font-style: italic;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border: 2px solid black;
+    font-weight:600;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 5px;
+    border:0em;
+    background-color: lightpink;
 }
 #sub{
     cursor: pointer;
-    background-color: rgb(239, 38, 38);
-    font-style: italic;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border: 2px solid black;
+    font-weight:600;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 5px;
+    border:0em;
+    background-color:darkseagreen;
+}
+#logo{
+    width:100px;
+    height:75px;
+}
+
+#container{
+    text-align: center;
+    
 }
