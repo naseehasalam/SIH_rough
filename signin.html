@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign in</title>
-    <link rel="stylesheet" href="signin.css">
-</head>
-<body>
+    <link rel="stylesheet" href="signin.css" />
+  </head>
+  <body>
+    <img src="images/edge.png" alt="EDGE" id="logo" />
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
     <form class="pure-form">
-    <img src="edgeimg.jpeg" alt="EDGE">
-    <!-- <form action="/action_page.php"> -->
-        <div class="container">
-          <h1>Sign Up</h1>
-          <p>Please fill in this form to create an account.</p>
-          <label for="name">Name-*</label>
-          <input type="text" placeholder="Enter Your Name" name="name" required>
-          <label for="name">Roll No.-*</label>
-          <input type="text" placeholder="Enter Your Roll No." required>
-          <br>
-          <label for="email" >Email</label>
-          <input type="text" placeholder="Enter Email" name="email" >
-          <label for="Phone">Phone No.-</label>
-          <input type="text" placeholder="Enter your Number" required><br>
-          <!-- <label for="psw">Password</label>
-         <input type="password" placeholder="Enter Password" name="psw" required>
-         
-         <label for="psw-repeat">Repeat Password</label>
-         <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
-         <input type="checkbox" onclick="Show()">Show Password -->
-         <input type="password" placeholder="Password" id="password" required>
-         <input type="password" placeholder="Confirm Password" id="confirm_password" required>
- 
-         <!-- <button type="submit" class="pure-button pure-button-primary">Confirm</button> -->
+      <!-- <form action="/action_page.php"> -->
+      <div class="container">
+        <label for="name" class="left">Name</label>
+        <input type="text" placeholder="Enter Your Name" name="name" required />
+        <label for="name" class="right">Roll No.</label>
+        <input type="text" placeholder="Enter Your Roll No." required />
+        <br />
+
+        <label for="email" class="left">Email</label>
+        <input type="text" placeholder="Enter Email" name="email" />
+        <label for="Phone" class="right">Phone No.</label>
+        <input type="text" placeholder="Enter your Number" required />
+        <br />
+
+        <label for="psw" class="left">Password</label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+        <br />
+
+        <label for="psw-repeat"
+          >Confirm Password<input
+            type="password"
+            placeholder="Repeat Password"
+            name="psw-repeat"
+            required
+        /></label>
+
+        <div class="container2">
+          <br />
+          <label><input type="checkbox" onclick="Show()" />Show Password</label
+          ><br /><br />
+
+          <!-- <button type="submit" class="pure-button pure-button-primary">Confirm</button> -->
           <label>
-            <input type="checkbox" name="remember" style="margin-bottom:15px"> Remember me
+            <input
+              type="checkbox"
+              name="remember"
+              style="margin-bottom: 15px"
+            />
+            Remember me
           </label>
-          <div class="clearfix">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <button type="submit" class="signupbtn" onclick="notification">Sign Up</button>
-          </div>
-          <script src="login.js"></script>
         </div>
-      </form>
-      
-</body>
+        <div class="clearfix">
+          <button type="button" class="cancelbtn">CANCEL</button>
+          <button type="submit" class="signupbtn" onclick="notification">
+            SIGN UP
+          </button>
+        </div>
+        <script src="login.js"></script>
+      </div>
+    </form>
+  </body>
 </html>
